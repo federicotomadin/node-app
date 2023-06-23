@@ -11,6 +11,11 @@ app.get('/health', (req, res) => {
     res.sendStatus(204)
 })
 
+app.get('/random', (req, res) => {
+    res.header({ "Message": "Hello World" })
+    res.sendStatus(204)
+})
+
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
